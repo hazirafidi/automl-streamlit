@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     git \
     && rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/hazirafidi/automl.git .
+RUN git clone https://github.com/hazirafidi/automl-streamlit.git .
 RUN pip3 install -r requirements.txt
 CMD ["streamlit", "run", "src/🏠Home.py"]
