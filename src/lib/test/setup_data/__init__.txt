@@ -1,0 +1,2 @@
+from lib.setup_data.setup import setup_clf
+from lib.setup_data.setup import setup_reg
