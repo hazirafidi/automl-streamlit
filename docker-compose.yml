@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: automl
+    command: streamlit run src/Home.py
+    ports:
+      - 8501:8501
+    volumes:
+      - .:/automl
